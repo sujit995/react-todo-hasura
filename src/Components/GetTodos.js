@@ -2,9 +2,9 @@ import React from 'react';
 import { Query } from 'react-apollo';
 import { getIncompleteTodos } from '../queries';
 import MarkTodo from './MarkTodo';
-import DeleteTodo from './DeleteTodos';
+import DeleteTodo from './DeleteTodo';
 import AddTodos from './AddTodos';
-import { ListGroup, ListGroupItem, ButtonGroup, Container, Row, Col } from 'react-bootstrap';
+import { ListGroup, ListGroupItem, ButtonGroup, Grid, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,7 +22,7 @@ const GetTodos = () => (
             let count = 0;
             return (
                 <div>
-                    <Container>
+                    <Grid>
                         <Row>
                             <Col md={8} mdPush={2}>
                                 <ListGroup>
@@ -44,7 +44,7 @@ const GetTodos = () => (
                                 </ListGroup>
                             </Col>
                         </Row>
-                    </Container>
+                    </Grid>
                 </div>
             );
         }}

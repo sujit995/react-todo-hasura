@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Button, Nav, NavItem, Image, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Button, Nav, NavItem, Image, Grid, Row, Col } from 'react-bootstrap';
 import './App.css';
 import Hasura from './assets/hasura_logo.png'
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
         <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/" style={{ 'padding-top': '23px' }}>Hasura Todo</a>
+              <a href="/" style={{ paddingTop: '23px' }}>Hasura Todo</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -87,7 +87,7 @@ class App extends Component {
         {
           !isAuthenticated() && (
             <div className="container">
-              <Container>
+              <Grid>
                 <Row>
                   <Col md={2} mdPush={5}>
                     <Image src={Hasura} responsive />
@@ -101,7 +101,7 @@ class App extends Component {
                   </Button>
                   </Col>
                 </Row>
-              </Container>
+              </Grid>
             </div>
           )
         }
