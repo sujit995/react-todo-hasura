@@ -10,7 +10,7 @@ class Home extends Component {
     super(props);
     const ACCESS_TOKEN = localStorage.getItem('access_token');
     client = new ApolloClient({
-      uri: "https://peaceful-woodland-09978.herokuapp.com/v1alpha1/graphql",
+      uri: "https://funny-shepherd-88.hasura.app/v1/graphql",
       headers: {
         'Authorization': `Bearer ${ACCESS_TOKEN}`,
       }
